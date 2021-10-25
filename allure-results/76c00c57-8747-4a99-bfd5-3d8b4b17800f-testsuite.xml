@@ -1,0 +1,126 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1635181463917' stop='1635181465340'>
+    <name>login to the admin panel</name>
+    <title>login to the admin panel</title>
+    <test-cases>
+        <test-case start='1635181463917' status='broken' stop='1635181464117'>
+            <name>enter username</name>
+            <title>enter username</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1635181463968' status='broken' stop='1635181464117'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635181463976' status='passed' stop='1635181464111'>
+                            <name>POST /session/:sessionId/url</name>
+                            <title>POST /session/:sessionId/url</title>
+                            <attachments>
+                                <attachment title='Request' source='3e9add10-2399-46f9-8bb4-8482c75a02b1-attachment.json' type='application/json' size='83'/>
+                                <attachment title='Screenshot' source='423d922a-ae06-4a6b-a41f-555456f2a253-attachment.png' type='image/png' size='4228'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>this.username.addValue is not a function</message>
+                <stack-trace>TypeError: this.username.addValue is not a function
+                    at LoginPage.enterUserName (/home/automation/Desktop/webdriver_project/pages/loginpage.js:24:23)
+                    at Context.&lt;anonymous> (/home/automation/Desktop/webdriver_project/test/login.spec.js:14:19)
+                    at Context.executeAsync (/home/automation/Desktop/webdriver_project/node_modules/@wdio/mocha-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+                    at Context.testFrameworkFnWrapper (/home/automation/Desktop/webdriver_project/node_modules/@wdio/mocha-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1635181464118' status='broken' stop='1635181464876'>
+            <name>enter password</name>
+            <title>enter password</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1635181464119' status='passed' stop='1635181464876'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='1bb9d04c-8222-490a-ab77-a572047b6095-attachment.png' type='image/png' size='11347'/>
+                    </attachments>
+                    <steps>
+                        <step start='1635181464120' status='passed' stop='1635181464747'>
+                            <name>POST /session/:sessionId/url</name>
+                            <title>POST /session/:sessionId/url</title>
+                            <attachments>
+                                <attachment title='Request' source='a6581d66-4232-47da-bcd9-6733cc0b606d-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>this.password.setValue is not a function</message>
+                <stack-trace>TypeError: this.password.setValue is not a function
+                    at LoginPage.enterPassword (/home/automation/Desktop/webdriver_project/pages/loginpage.js:29:23)
+                    at Context.&lt;anonymous> (/home/automation/Desktop/webdriver_project/test/login.spec.js:21:19)
+                    at Context.executeAsync (/home/automation/Desktop/webdriver_project/node_modules/@wdio/mocha-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+                    at Context.testFrameworkFnWrapper (/home/automation/Desktop/webdriver_project/node_modules/@wdio/mocha-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1635181464877' status='broken' stop='1635181465339'>
+            <name>click on login button</name>
+            <title>click on login button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1635181464877' status='passed' stop='1635181465193'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1635181464887' status='passed' stop='1635181465061'>
+                            <name>POST /session/:sessionId/url</name>
+                            <title>POST /session/:sessionId/url</title>
+                            <attachments>
+                                <attachment title='Request' source='6d1da6a1-d504-4d23-929c-43bbdcd07216-attachment.json' type='application/json' size='83'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='b475b71a-d6d6-42b6-ab86-4160bc6da1fb-attachment.png' type='image/png' size='11347'/>
+            </attachments>
+            <failure>
+                <message>this.loginBtn.click is not a function</message>
+                <stack-trace>TypeError: this.loginBtn.click is not a function
+                    at LoginPage.clickOnLoginBtn (/home/automation/Desktop/webdriver_project/pages/loginpage.js:34:23)
+                    at Context.&lt;anonymous> (/home/automation/Desktop/webdriver_project/test/login.spec.js:28:19)
+                    at Context.executeAsync (/home/automation/Desktop/webdriver_project/node_modules/@wdio/mocha-framework/node_modules/@wdio/utils/build/shim.js:325:27)
+                    at Context.testFrameworkFnWrapper (/home/automation/Desktop/webdriver_project/node_modules/@wdio/mocha-framework/node_modules/@wdio/utils/build/test-framework/testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
