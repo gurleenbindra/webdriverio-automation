@@ -1,8 +1,8 @@
 const loginPage = require('../pages/loginpage')
 
 const userObj = {
-    user: 'admin',
-    password: 'adminadmin',
+    user: 'qwerty',
+    password: 'qwerty',
 }
 var assert = require('assert');
 const loginpage = require('../pages/loginpage');
